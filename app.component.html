@@ -1,0 +1,173 @@
+<div>
+<mat-grid-list cols="2" rowHeight="2:1">
+  <mat-grid-tile>
+  <mat-card class="example-card">
+    <h1>Previous Month Bills</h1>
+    
+    <div style="display: block;height:200px">
+      <canvas baseChart 
+        [datasets]="barChartData"
+        [labels]="barChartLabels"
+        [options]="barChartOptions"
+        [plugins]="barChartPlugins"
+        [legend]="barChartLegend"
+        [chartType]="barChartType">
+      </canvas>
+    </div>
+    <h2>Month vs Bill</h2>
+   
+
+  </mat-card>
+</mat-grid-tile>
+<mat-grid-tile>
+  <mat-card class="example-card">
+    <h1>June Month Bill</h1>
+
+    <mat-grid-list cols="4" rowHeight="4:1">
+      <div fxLayout="row">
+      <mat-grid-tile>
+        
+          
+            <h4>Instances Bill</h4>
+          </mat-grid-tile>
+        </div>
+        
+        
+      
+     
+ 
+    <div fxLayout="row">
+      <mat-grid-tile>
+       
+        <h4>190.54</h4>
+      </mat-grid-tile>
+      
+        
+    
+    </div>
+      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile>
+        
+        <br>
+        
+     </mat-grid-tile>
+    </mat-grid-list>
+    <mat-grid-list cols="4" rowHeight="4:1">
+      <mat-grid-tile>
+        <h4>SGST(9%)</h4>
+      </mat-grid-tile>
+      <mat-grid-tile>
+        <h4>17.15</h4>
+      </mat-grid-tile>
+      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile>
+       
+      </mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-grid-list cols="4" rowHeight="4:1">
+      <mat-grid-tile>
+        <h4>CGST(9%)</h4>
+       </mat-grid-tile>
+      <mat-grid-tile>
+        <h4>17.15</h4>
+      </mat-grid-tile>
+      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile></mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-grid-list cols="4" rowHeight="4:1">
+      <mat-grid-tile class="border1">
+        <h1 >Total Bill</h1>
+      </mat-grid-tile>
+      <mat-grid-tile class="border1">
+        <h1>224.84</h1>
+      </mat-grid-tile>
+      <mat-grid-tile ></mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-stroked-button color="primary" class="button1">Invoice
+           <mat-icon>launch</mat-icon>
+
+       </button>
+      </mat-grid-tile>
+    </mat-grid-list>
+
+
+    <mat-grid-list cols="4" rowHeight="4:1">
+      <mat-grid-tile class="border2">
+        <h2 class="border2">Due Date</h2>
+      </mat-grid-tile>
+      <mat-grid-tile class="border2">
+        <h1 class="border2">July 04,2021</h1>
+      </mat-grid-tile>
+      <mat-grid-tile class="border2"></mat-grid-tile>
+      <mat-grid-tile class="border2"></mat-grid-tile>
+    </mat-grid-list>
+
+    <mat-grid-list cols="4" rowHeight="4:1">
+      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile>
+        <p>29 days remaining</p>
+      </mat-grid-tile>
+      <mat-grid-tile></mat-grid-tile>
+      <mat-grid-tile>
+        <button mat-flat-button disabled>
+          <mat-icon>
+
+            account-balance-wallet</mat-icon>
+          Pay Now</button>
+      </mat-grid-tile>
+    </mat-grid-list>
+    
+  </mat-card>
+
+  
+
+  </mat-grid-tile>
+
+
+  
+    <mat-grid-tile colspan="2">
+   <mat-card class="example1-card">
+    <mat-tab-group mat-align-tabs="start" class="tab1">
+      <mat-tab  class="tab1" label="All Invoices">
+        <mat-table [dataSource]="dataSource" class="mat-elevation-z8">
+          <!-- Position Column -->
+          <ng-container matColumnDef="month" class="border">
+            <mat-header-cell *matHeaderCellDef class="input"> Month </mat-header-cell>
+            <mat-cell *matCellDef="let element" class="month"> {{element.month}} </mat-cell>
+          </ng-container>
+        
+          <!-- Name Column -->
+          <ng-container matColumnDef="amountin" class="border">
+            <mat-header-cell *matHeaderCellDef class="input"> Amount in</mat-header-cell>
+            <mat-cell *matCellDef="let element" class="amount"> {{element.amountin}} </mat-cell>
+          </ng-container>
+        
+          <!-- Weight Column -->
+          <ng-container matColumnDef="paidon" class="border">
+            <mat-header-cell *matHeaderCellDef class="input"> Paid On</mat-header-cell>
+            <mat-cell *matCellDef="let element" class="paidon"> {{element.paidon}} </mat-cell>
+          </ng-container>
+        
+          <!-- Symbol Column -->
+          <ng-container matColumnDef="status" class="border">
+            <mat-header-cell *matHeaderCellDef class="input"> Status</mat-header-cell>
+            <mat-cell *matCellDef="let element" class="status"> 
+              <button mat-raised-button class="paid">Paid</button>
+             </mat-cell>
+          </ng-container>
+        
+          <mat-header-row *matHeaderRowDef="displayedColumns"></mat-header-row>
+          <mat-row *matRowDef="let row; columns: displayedColumns;"></mat-row>
+        </mat-table>
+
+      </mat-tab>
+      
+    </mat-tab-group>
+   </mat-card>
+  </mat-grid-tile>
+  
+</mat-grid-list>
+</div>
+

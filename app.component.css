@@ -1,0 +1,130 @@
+.example-card {
+    width: 900px;
+    margin-top: 30px;
+    margin-left: 10px;
+    height: 80%;
+    border:5px;
+    box-shadow: 0px 0px 1px 1px ;
+    border: 5px;
+  }
+  #divChart{
+    display: block;
+    width: 400px;
+    height: 400px;
+  }
+  .example1-card{
+    width: 1900px;
+    height: 80%;
+    margin-top: 00px;
+    margin-left: 10px;
+    border:5px;
+    box-shadow: 0px 0px 1px 1px ;
+  }
+  table {
+    width: 100%;
+  }
+  .input{
+    font-family: 'Lato';
+    font-size: 18px;
+    font-style: normal;
+   font-weight: 600;
+   line-height: 22px;
+   letter-spacing: 0em;
+   text-align: left;
+   color:black;
+
+  }
+  .month{
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:blue;
+
+  }
+  .amount{
+    font-family:' Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#19B15F;
+
+
+  }
+  .paidon{
+    font-family:' Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: center;
+    color:black;
+
+  }
+  .status{
+    font-family:' Roboto';
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:#19B15F;
+
+  }
+  .tab1{
+    font-family: 'Lato';
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 22px;
+    letter-spacing: 0em;
+    text-align: left;
+    color:blue;
+
+  }
+  .grid{
+    height:500px;
+  }
+.paid{
+  background-color:  #19B15F;
+  border-radius: 15px;
+  text-align: center;
+  
+}
+.border{
+  border: 1px solid currentColor;
+}
+.mat-tab-label{
+  color:blue;
+} 
+.border1{
+  border: 1px solid #34343466
+}
+h1{
+  font-family: 'Roboto';
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 28px;
+  letter-spacing: 0em;
+  text-align: left;
+  }
+  p{
+    color: #19B15F;
+
+  }
+  .button{
+    border-color: blue;
+    width:25px;
+  }
+  .border2{
+    margin-top: 50px;
+  }
